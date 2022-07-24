@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Головна - WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -18,19 +18,31 @@
     <link rel="stylesheet" href="./css/webstudio.css" />
   </head>
   <body>
-    <header>
-      <a lang="en" href=""><span>Web</span>Studio</a>
-      <nav>
-        <ul>
-          <li><a href="">Студія</a></li>
-          <li><a href="">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+    <header class="header">
+      <div class="header-container container">
+        <a class="logo-link link" lang="en" href=""><span class="logo">Web</span>Studio</a>
+        <nav>
+          <ul class="menu list">
+            <li class="menu-item"><a class="menu-link link" href="#">Студія</a></li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-item"><a class="menu-link link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="address-list list">
+          <li>
+            <svg width="16" height="12">
+              <use href="./images/sprite.svg#envelope"></use></svg
+            ><a class="header-address link" href="">info@devstudio.com</a>
+          </li>
+          <li>
+            <svg width="10" height="16">
+              <use href="./images/sprite.svg#smartphone"></use></svg
+            ><a class="header-address link" href="">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="">info@devstudio.com</a></li>
-        <li><a href="">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -39,7 +51,7 @@
       </section>
       <section class="benefits">
         <h2>Переваги</h2>
-        <ul>
+        <ul class="list">
           <li>
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
             <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -60,38 +72,209 @@
       </section>
       <section>
         <h2>Чим ми займаємося</h2>
-        <ul>
+        <ul class="list">
           <li><img src="./images/section-box/box1.jpg" alt="" /></li>
-          <li><img src="./images/section-box/box1.jpg" alt="" /></li>
-          <li><img src="./images/section-box/box1.jpg" alt="" /></li>
+          <li><img src="./images/section-box/box2.jpg" alt="" /></li>
+          <li><img src="./images/section-box/box3.jpg" alt="" /></li>
         </ul>
       </section>
       <section class="team">
         <h2>Наша команда</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/section-team/img1.jpg" alt="" />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
+            <div class="team-wrapper">
+              <h3>Ігор Дем'яненко</h3>
+              <p>Product Designer</p>
+              <ul class="list">
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <img src="./images/section-team/img2.jpg" alt="" />
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
+            <div class="team-wrapper">
+              <h3>Ольга Рєпіна</h3>
+              <p>Frontend Developer</p>
+              <ul class="list">
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <img src="./images/section-team/img3.jpg" alt="" />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
+            <div class="team-wrapper">
+              <h3>Микола Тарасов</h3>
+              <p>Marketing</p>
+              <ul class="list">
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <img src="./images/section-team/img4.jpg" alt="" />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
+            <div class="team-wrapper">
+              <h3>Михайло Єрмаков</h3>
+              <p>UI Designer</p>
+              <ul class="list">
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </section>
+      <section>
+        <h2>Постійні клієнти</h2>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <a class="link" href=""><span>Web</span>Studio</a>
+      <h2>приєднуйтесь</h2>
+      <address>
+        <ul class="list">
+          <li><a class="link" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
+          <li><a class="link" href="">info@example.com</a></li>
+          <li><a class="link" href="">+38 099 111 11 11</a></li>
+        </ul>
+      </address>
+      <ul class="list">
+        <li>
+          <a href="">
+            <svg>
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg>
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg>
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg>
+              <use></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -48,4 +48,64 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 /* =============== HEADER ============== */
+.header-container {
+    display: flex;
+}
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+        /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.logo-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    
+    color: #000000;
+    margin-right: 93px;
+}
+.menu-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+}
+.menu {
+    display: flex;
+}
+.address-list {
+    display: flex;
+}
+
+.header-address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+}
