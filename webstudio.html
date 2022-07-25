@@ -24,7 +24,9 @@
         <a class="logo-link link" lang="en" href=""><span class="logo">Web</span>Studio</a>
         <nav>
           <ul class="menu list">
-            <li class="menu-item"><a class="menu-link link" href="#">Студія</a></li>
+            <li class="menu-item">
+              <a class="menu-link link active" href="./webstudio.html">Студія</a>
+            </li>
             <li class="menu-item">
               <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
             </li>
@@ -32,44 +34,58 @@
           </ul>
         </nav>
         <ul class="address-list list">
-          <li>
-            <svg width="16" height="12">
-              <use href="./images/sprite.svg#envelope"></use></svg
-            ><a class="header-address link" href="">info@devstudio.com</a>
+          <li class="address-list-item">
+            <a class="header-address link" href=""
+              ><svg class="address-list-icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
-          <li>
-            <svg width="10" height="16">
-              <use href="./images/sprite.svg#smartphone"></use></svg
-            ><a class="header-address link" href="">+38 096 111 11 11</a>
+          <li class="address-list-item">
+            <a class="header-address link" href=""
+              ><svg class="address-list-icon" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main>
       <section class="hero">
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button>Замовити послугу</button>
+        <h1 class="main-header">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-btn">Замовити послугу</button>
       </section>
-      <section class="benefits">
-        <h2>Переваги</h2>
-        <ul class="list">
-          <li>
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-          </li>
-          <li>
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-          </li>
-          <li>
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>Так само консультація з широким активом значною мірою зумовлює</p>
-          </li>
-          <li>
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-          </li>
-        </ul>
+      <section class="benefits section">
+        <div class="container">
+          <h2 class="visually-hidden">Переваги</h2>
+          <ul class="benefits-list list">
+            <li class="benefits-list-item">
+              <h3 class="benefits-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits-list-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="benefits-list-item">
+              <h3 class="benefits-list-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits-list-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="benefits-list-item">
+              <h3 class="benefits-list-title">ПЛАНУВАННЯ</h3>
+              <p class="benefits-list-text">
+                Так само консультація з широким активом значною мірою зумовлює
+              </p>
+            </li>
+            <li class="benefits-list-item">
+              <h3 class="benefits-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits-list-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <h2>Чим ми займаємося</h2>
