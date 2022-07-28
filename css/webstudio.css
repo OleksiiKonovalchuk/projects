@@ -56,12 +56,24 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .active {
+    position: relative;
     color: #2196F3;
 }
+.active::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+}
 .section {
-    padding: 94px 15px;
+    padding: 94px;
 }
 /* =============== HEADER ============== */
 .header-container {
@@ -101,6 +113,8 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     
+    display: block;
+    padding: 32px 0;
 }    
 .menu-link:hover, .menu-link:focus {
     color: #2196F3;
@@ -111,10 +125,7 @@ body {
 .menu-item:not(:last-child) {
     margin-right: 50px;
 }
-.menu-link {
-    display: block;
-    padding: 32px 0;
-}
+
 .address-list {
     display: flex;
     margin-left: auto;
@@ -243,4 +254,273 @@ background-image: url(../images/icons/astronaut.svg);
     line-height: 1.71;
     
     color: #757575;
+}
+.main-headers {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* =============== BOX Section ============= */
+.box-list {
+    display: flex;
+    gap: 30px;
+}
+.our-job {
+    padding-top: 0;
+}
+.box-wrapper {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)) ;
+    padding: 27px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+.box-list-item {
+    position: relative;
+}
+.box-descr {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+/* ================= TEAM ================= */
+.team {
+    background-color: #F5F4FA;;
+}
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+.team-list-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+}
+.team-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+.team-position {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: #757575;
+    margin-bottom: 16px;
+}
+.team-wrapper {
+    padding: 30px 32px;
+}
+.social-list {
+    display: flex;
+    gap: 10px;
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.social-icon {
+    fill: #AFB1B8;
+}
+.social-list-link:hover, .social-list-link:focus {
+    background-color: #2196F3;
+}
+.social-list-link:hover .social-icon,
+.social-list-link:focus .social-icon{
+    fill: #FFFFFF;
+}
+/* ================= clients ================= */
+.company-list {
+    display: flex;
+    gap: 30px;
+}
+.company-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+.company-icon {
+    fill: currentColor;
+}
+.company-list-link:hover, .company-list-link:focus {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+/* ================== FOOOOOTERRR ================= */
+.footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+}
+.footer-logo-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    
+    color: #2196F3;
+    margin-right: 156px;
+}
+.footer-logo {
+    color: #fff
+}
+.join {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.footer-maps {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    color: #FFFFFF;
+}
+.footer-address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-address-box {
+    margin-right: 70px;
+    width: 231px;
+}
+.footer-address-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-wrap:first-child {
+    display: flex;
+    align-items: baseline;
+}
+.footer-wrap:nth-child(2) {
+    display: flex;
+    margin-top: 20px;
+}
+.footer-social-list {
+    display: flex;
+    gap: 10px;
+}
+.footer-social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+.footer-social-list-icon {
+    fill: currentColor;
+}
+.footer-social-list-link:hover, .footer-social-list-link:focus {
+    background-color: #2196F3;
+}
+/* =============== PORTFOLIO =============== */
+.portfolio-btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+.portfolio-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+
+    color: #212121;
+    padding: 6px 22px;
+    background-color: #F5F4FA; 
+    border-radius: 4px;
+}
+.portfolio-btn:hover, .portfolio-btn:focus {
+    background-color: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        color: #FFFFFF;
+}
+/* ================= CARDS =================== */
+.poftfolio-card-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.card-descr {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    color: #757575;
+}
+.card-wrapper {
+    padding: 20px 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+.porfolio-card-link {
+    display: inline-block;
+}
+.porfolio-card-link:hover, .porfolio-card-link:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-overlay {
+    position: relative;
+}
+.card-overlay-text {
+    position: absolute;
+    display: none;
 }
