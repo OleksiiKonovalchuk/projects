@@ -1,5 +1,8 @@
 .page-header {
 	position: relative;
+	&__socials-item:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 .page-header__container {
 	padding: 21px 0;

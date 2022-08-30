@@ -98,6 +98,9 @@ button {
 .page-header {
   position: relative;
 }
+.page-header__socials-item:not(:last-child) {
+  margin-right: 10px;
+}
 
 .page-header__container {
   padding: 21px 0;
@@ -158,7 +161,7 @@ button {
 }
 
 .hero {
-  background: url(../../images/SOS/hero-bg.jpg), rgba(0, 0, 0, 0.75);
+  background: url(../../images/SOS/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,7 +215,7 @@ button {
 }
 
 .social-br {
-  background: url(../../images/SOS/social-br-bg.jpg), rgba(0, 0, 0, 0.75);
+  background: url(../../images/SOS/social-br-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -271,7 +274,7 @@ button {
 }
 
 .features {
-  background: url(../../images/SOS/features-bg.jpg), rgba(0, 0, 0, 0.75);
+  background: url(../../images/SOS/features-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -312,7 +315,7 @@ button {
 }
 
 .demands {
-  background: url(../../images/SOS/demands-bg.jpg), rgba(0, 0, 0, 0.75);
+  background: url(../../images/SOS/demands-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -349,7 +352,7 @@ button {
 }
 
 .quotes {
-  background: url(../../images/SOS/quotes-bg.jpg), rgba(0, 0, 0, 0.75);
+  background: url(../../images/SOS/quotes-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
