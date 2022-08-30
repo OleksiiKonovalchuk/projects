@@ -73,10 +73,6 @@ button {
   overflow: hidden;
 }
 
-.section {
-  background: rgba(0, 0, 0, 0.75);
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -162,7 +158,7 @@ button {
 }
 
 .hero {
-  background: url(../../images/SOS/hero-bg.jpg);
+  background: url(../../images/SOS/hero-bg.jpg), rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -216,7 +212,7 @@ button {
 }
 
 .social-br {
-  background: url(../../images/SOS/social-br-bg.jpg);
+  background: url(../../images/SOS/social-br-bg.jpg), rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -275,7 +271,7 @@ button {
 }
 
 .features {
-  background: url(../../images/SOS/features-bg.jpg);
+  background: url(../../images/SOS/features-bg.jpg), rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -316,7 +312,7 @@ button {
 }
 
 .demands {
-  background: url(../../images/SOS/demands-bg.jpg);
+  background: url(../../images/SOS/demands-bg.jpg), rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -353,7 +349,7 @@ button {
 }
 
 .quotes {
-  background: url(../../images/SOS/quotes-bg.jpg);
+  background: url(../../images/SOS/quotes-bg.jpg), rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
