@@ -1,3 +1,39 @@
 .demands {
 	background: url(../../images/SOS/demands-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 145px;
+	padding-bottom: 170px;
+	&__what {
+		@extend %text;
+		text-align: center;
+		margin-bottom: 8px;
+	}
+	&__header {
+		@extend %header;
+		text-align: center;
+		margin-bottom: 133px;
+	}
+	&__span {
+		font-family: "Bebas Neue";
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 2px;
+
+		color: #ffb548;
+		display: block;
+		margin-bottom: 7px;
+	}
+	&__grid {
+		max-width: 573px;
+	}
+	&__item {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		padding: 15px 10px 30px;
+		border: 1px solid rgb(43, 41, 41);
+	}
 }

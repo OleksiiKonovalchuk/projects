@@ -4,137 +4,183 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>Самураї</title>
 	</head>
 	<body>
-		<header class="page-header section">
-			<a href="" class="page-header__logo-link"><img src="./images/SOS/sos.svg" alt="" /></a>
-			<nav class="nav">
-				<ul class="nav__list list">
-					<li class="nav__item"><a href="" class="nav__link link">MAIN</a></li>
-					<li class="nav__item"><a href="" class="nav__link link">about</a></li>
-					<li class="nav__item"><a href="" class="nav__link link">game features</a></li>
-					<li class="nav__item"><a href="" class="nav__link link">System requirements</a></li>
-					<li class="nav__item"><a href="" class="nav__link link">quotes</a></li>
+		<header class="page-header container">
+			<div class="page-header__container">
+				<a href="" class="page-header__logo-link"><img src="./images/SOS/sos.svg" alt="" /></a>
+				<nav class="nav">
+					<ul class="nav__list list">
+						<li class="nav__item"><a href="" class="nav__link link">MAIN</a></li>
+						<li class="nav__item"><a href="" class="nav__link link">about</a></li>
+						<li class="nav__item"><a href="" class="nav__link link">game features</a></li>
+						<li class="nav__item"><a href="" class="nav__link link">System requirements</a></li>
+						<li class="nav__item"><a href="" class="nav__link link">quotes</a></li>
+					</ul>
+				</nav>
+				<select class="page-header__lang" name="lang" id="">
+					<option value="eng">ENG</option>
+					<option value="rus">RUS</option
+					><option value="fra">FRA</option
+					><option value="deu">DEU</option>
+				</select>
+				<ul class="page-header__socials-list list">
+					<li class="page-header__socials-item">
+						<a href="" class="page-header__socials-link link">
+							<svg class="page-header__socials-icon" width="30" height="30">
+								<use href="./images/SOS/sprite.svg#xbox-icon"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="page-header__socials-item">
+						<a href="" class="page-header__socials-link link">
+							<svg class="page-header__socials-icon" width="30" height="30">
+								<use href="./images/SOS/sprite.svg#steam-icon"></use>
+							</svg>
+						</a>
+					</li>
 				</ul>
-			</nav>
-			<select class="page-header__lang" name="lang" id="">
-				<option value="eng">ENG</option>
-				<option value="rus">RUS</option
-				><option value="fra">FRA</option
-				><option value="deu">DEU</option>
-			</select>
-			<ul class="page-header__socials-list list">
-				<li class="page-header__socials-item">
-					<a href="" class="page-header__socials-link link">
-						<svg class="page-header__socials-icon" width="30" height="30">
-							<use href="./images/SOS/sprite.svg#xbox-icon"></use>
-						</svg>
-					</a>
-				</li>
-				<li class="page-header__socials-item">
-					<a href="" class="page-header__socials-link link">
-						<svg class="page-header__socials-icon" width="30" height="30">
-							<use href="./images/SOS/sprite.svg#steam-icon"></use>
-						</svg>
-					</a>
-				</li>
-			</ul>
+			</div>
 		</header>
 		<main>
 			<section class="hero section">
-				<h1 class="hero__header">SURVIVE AT ALL COSTS</h1>
-				<p class="hero__text">Experience new social battle royale game</p>
-				<button class="hero__btn">Buy Now on Steam<span class="hero__btn-span"></span>$14.99</button>
-				<p class="hero__story">The story</p>
-				<svg class="hero__arrow">
-					<use href=""></use>
-				</svg>
+				<div class="container"
+					><h1 class="hero__header">SURVIVE AT ALL COSTS</h1>
+					<p class="hero__text">Experience new social battle royale game</p>
+					<button class="hero__btn">Buy Now on Steam<span class="hero__btn-span"></span>$14.99</button>
+					<p class="hero__story">The story</p>
+					<svg class="hero__arrow" height="28" width="21">
+						<use href="./images/SOS/sprite.svg#scroll-down-icon"></use></svg
+				></div>
 			</section>
 			<section class="social-br section">
-				<p class="social-br__what">What is SOS?</p>
-				<h2 class="social-br__header">social battle royale game</h2>
-				<p class="social-br__descr"
-					>Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick
-					is: three people can survive. Will you run solo or form friendships with others to escape? Making the right
-					decisions could be the difference between life and death.</p
-				>
+				<div class="container social-br__container"
+					><div class="container__item"
+						><p class="social-br__what">What is SOS?</p>
+						<h2 class="social-br__header">social battle royale game</h2>
+						<p class="social-br__descr"
+							>Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The
+							trick is: three people can survive. Will you run solo or form friendships with others to escape?
+							<br /><br />
+							Making the right decisions could be the difference between life and death.</p
+						></div
+					><div class="container__item"
+						><img src="./images/SOS/screenshot3.jpg" alt="" class="social-br__img3" />
+						<img src="./images/SOS/screenshot2.jpg" alt="" class="social-br__img2" />
+						<img src="./images/SOS/screenshot1.jpg" alt="" class="social-br__img1" /></div
+				></div>
 			</section>
 			<section class="features section">
-				<p>What’s so special?</p>
-				<h2>features</h2>
-				<ul class="features__list list">
-					<li class="features__item"><h3 class="features__header">SURVIVE AT ALL COSTS</h3>p.features__descr </li>
-					<li class="features__item"><h3 class="features__header">CREATE ALLIES AND ENEMIES</h3>p.features__descr </li>
-					<li class="features__item"><h3 class="features__header">IMPRESS THE AUDIENCE</h3>p.features__descr </li>
-				</ul>
+				<div class="container">
+					<div class="features__wrapper"
+						><p class="features__what">What’s so special?</p>
+						<h2 class="features__header">features</h2>
+						<ul class="features__list">
+							<li class="features__item"
+								><h3 class="features__title">SURVIVE AT ALL COSTS</h3
+								><p class="features__descr"
+									>You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue
+									chopper.</p
+								>
+							</li>
+							<li class="features__item"
+								><h3 class="features__title">CREATE ALLIES AND ENEMIES</h3><p class="features__descr"></p>
+							</li>
+							<li class="features__item"
+								><h3 class="features__title">IMPRESS THE AUDIENCE</h3><p class="features__descr"></p>
+							</li> </ul
+					></div>
+				</div>
 			</section>
 			<section class="demands section">
-				<p>Can My Computer Run this game?</p>
-				<h2>system requirements</h2>
-				<table class="demands__grid">
-					<tr>
-						<td class="demands__item"
-							><span class="deamands__span">OS:</span> Windows 7 64-bit only (No OSX support at this time) </td
-						><td class="demands__item"
-							><span class="deamands__span">pROCESSOR:</span> Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
-						</td>
-					</tr>
-					<tr>
-						<td class="demands__item"><span class="deamands__span">mEMORY:</span> 8 GB RAM </td
-						><td class="demands__item"><span class="deamands__span">storage:</span> 8 GB available space</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="demands__item"
-							><span class="deamands__span">GRAPHICS:</span> NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB
-							DirectX11 (Shader Model 5)
-						</td>
-					</tr>
-				</table>
+				<div class="container"
+					><p class="demands__what">Can My Computer Run this game?</p>
+					<h2 class="demands__header">system requirements</h2>
+					<table class="demands__grid">
+						<tr>
+							<td class="demands__item"
+								><span class="demands__span">OS:</span> Windows 7 64-bit only (No OSX support at this time) </td
+							><td class="demands__item"
+								><span class="demands__span">pROCESSOR:</span> Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+							</td>
+						</tr>
+						<tr>
+							<td class="demands__item"><span class="demands__span">mEMORY:</span> 8 GB RAM </td
+							><td class="demands__item"><span class="demands__span">storage:</span> 8 GB available space</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="demands__item"
+								><span class="demands__span">GRAPHICS:</span> NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB
+								DirectX11 (Shader Model 5)
+							</td>
+						</tr>
+					</table></div
+				>
 			</section>
 			<section class="quotes section">
-				<p>What people think?</p>
-				<h2>Press quotes</h2>
-				<p
-					>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why
-					we’re constantly working on our services to make it better every day and really listen to what our users has
-					to say.</p
-				>
-				<button>read more testimonials</button>
-				<ul class="list">
-					<li>
-						<img src="" alt="" />
-						<p>Evan Lahti</p>
-						<p>PC Gamer</p>
-						<p>“One of my gaming highlights of the year.”</p>
-						<p>October 18, 2018</p>
-						<svg>
-							<use></use>
-						</svg>
-					</li>
-					<li>
-						<img src="" alt="" />
-						<p>Jada Griffin </p>
-						<p>Nerdreactor </p>
-						<p>“The next big thing in the world of streaming and survival games.” </p>
-						<p>December 21, 2018</p>
-						<svg>
-							<use></use>
-						</svg>
-					</li>
-					<li>
-						<img src="" alt="" />
-						<p>Aaron Williams </p>
-						<p>Uproxx</p>
-						<p>“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
-						<p>December 24, 2018</p>
-						<svg>
-							<use></use>
-						</svg>
-					</li>
-				</ul>
+				<div class="container quotes__container">
+					<div class="quotes__container-item"
+						><p class="quotes__what">What people think?</p>
+						<h2 class="quotes__header">Press quotes</h2>
+						<p class="quotes__text"
+							>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why
+							we’re constantly working on our services to make it better every day and really listen to what our users
+							has to say.</p
+						>
+						<button class="quotes__btn">read more testimonials</button>
+					</div>
+					<div class="quotes__container-item"
+						><ul class="list">
+							<li class="quotes__item">
+								<div class="quotes__item-wrapper"
+									><img class="quotes__img" src="./images/SOS/comment1.jpg" alt="" />
+									<div class="quotes__names-wrapper"
+										><p class="quotes__names">Evan Lahti</p> <p class="quotes__job">PC Gamer</p></div
+									><svg class="quotes__icon" width="18" height="14">
+										<use href="./images/SOS/sprite.svg#twitter-icon"></use>
+									</svg>
+								</div>
+								<p class="quotes__comment">“One of my gaming highlights of the year.”</p>
+								<p class="quotes__comment-date">October 18, 2018</p>
+							</li>
+							<li class="quotes__item">
+								<div class="quotes__item-wrapper"
+									><img class="quotes__img" src="./images/SOS/comment2.jpg" alt="" />
+									<div class="quotes__names-wrapper"
+										><p class="quotes__names">Jada Griffin </p> <p class="quotes__job">Nerdreactor </p></div
+									>
+									<svg class="quotes__icon" width="18" height="14">
+										<use href="./images/SOS/sprite.svg#twitter-icon"></use></svg
+								></div>
+
+								<p class="quotes__comment">“The next big thing in the world of streaming and survival games.” </p>
+								<p class="quotes__comment-date">December 21, 2018</p>
+							</li>
+							<li class="quotes__item"
+								><div class="quotes__item-wrapper"
+									><img class="quotes__img" src="./images/SOS/comment3.jpg" alt="" />
+									<div class="quotes__names-wrapper"
+										><p class="quotes__names">Aaron Williams </p> <p class="quotes__job">Uproxx</p></div
+									>
+									<svg class="quotes__icon" width="18" height="14">
+										<use href="./images/SOS/sprite.svg#twitter-icon"></use></svg
+								></div>
+
+								<p class="quotes__comment">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+								<p class="quotes__comment-date">December 24, 2018</p>
+							</li>
+						</ul></div
+					>
+				</div>
 			</section>
 			<section class="subscribe">
 				<p>Want to stay in touch?</p>
@@ -160,28 +206,28 @@
 			<ul class="footer-socials list">
 				<li class="footer-socials__item">
 					<a href="" class="footer-socials__link">
-						<svg class="footer-socials__img">
+						<svg class="footer-socials__img" height="19" width="10">
 							<use href="./images/SOS/sprite.svg#facebook-icon"></use>
 						</svg>
 					</a>
 				</li>
 				<li class="footer-socials__item">
 					<a href="" class="footer-socials__link">
-						<svg class="footer-socials__img">
+						<svg class="footer-socials__img" height="16" width="21">
 							<use href="./images/SOS/sprite.svg#twitter-icon"></use>
 						</svg>
 					</a>
 				</li>
 				<li class="footer-socials__item">
 					<a href="" class="footer-socials__link">
-						<svg class="footer-socials__img">
+						<svg class="footer-socials__img" height="18" width="25">
 							<use href="./images/SOS/sprite.svg#youtube-icon"></use>
 						</svg>
 					</a>
 				</li>
 				<li class="footer-socials__item">
 					<a href="" class="footer-socials__link">
-						<svg class="footer-socials__img">
+						<svg class="footer-socials__img" height="18" width="19">
 							<use href="./images/SOS/sprite.svg#twitch-icon"></use>
 						</svg>
 					</a>

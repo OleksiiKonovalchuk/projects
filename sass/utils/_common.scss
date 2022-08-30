@@ -1,7 +1,10 @@
 body {
 	font-family: "Open Sans";
-	@include font(400, 18px, 22px);
+	font-weight: 400px;
+	font-size: 18px;
+	line-height: 1.22;
 	color: #ffffff;
+	letter-spacing: 0.1em;
 }
 
 /* ===== Normalize ====== */
@@ -29,11 +32,19 @@ button {
 	display: block;
 	margin: 0 auto;
 	cursor: pointer;
-	color: var(--body-main-color);
-	background-color: var(--logo-main-color);
-	font-family: var(--font-family-main);
 	border: none;
 	border-radius: 4px;
+	background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 20px;
+	width: 260px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: capitalize;
+
+	color: #1a1917;
 }
 
 .list {

@@ -1,3 +1,43 @@
 .features {
 	background: url(../../images/SOS/features-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 290px;
+	padding-bottom: 258px;
+	&__what {
+		@extend %text;
+		margin-left: 700px;
+	}
+	&__header {
+		@extend %header;
+		margin-bottom: 70px;
+		margin-left: 700px;
+	}
+	&__title {
+		font-family: "Bebas Neue";
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 43px;
+		letter-spacing: 2px;
+
+		color: #ffb548;
+	}
+	&__list {
+		margin-left: 678px;
+	}
+	&__descr {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: justify;
+		color: #ffffff;
+		max-width: 362px;
+	}
+	&__item {
+		padding-left: 10px;
+		&:not(:last-child) {
+			margin-bottom: 36px;
+		}
+	}
 }

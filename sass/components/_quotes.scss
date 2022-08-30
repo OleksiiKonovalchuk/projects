@@ -1,3 +1,104 @@
 .quotes {
 	background: url(../../images/SOS/quotes-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__container {
+		display: flex;
+	}
+	&__container-item:first-child {
+		padding-top: 304px;
+		padding-bottom: 270px;
+	}
+	&__container-item:last-child {
+		padding: 159px 0 148px 196px;
+	}
+	&__what {
+		@extend %text;
+		margin-bottom: 8px;
+	}
+	&__header {
+		@extend %header;
+		margin-bottom: 90px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 66px;
+		max-width: 450px;
+		text-align: justify;
+	}
+	&__btn {
+		margin-left: 0;
+	}
+	&__img {
+		display: inline-block;
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		box-shadow: 10px 3px 0px #ffb548;
+		margin-right: 30px;
+	}
+	&__item {
+		background: rgba(255, 255, 255, 0.08);
+		border-radius: 10px;
+		padding: 14px 21px 22px 17px;
+		width: 453px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+		&:nth-child(1) {
+			margin-left: 122px;
+		}
+		&:nth-child(3) {
+			margin-left: 90px;
+		}
+	}
+	&__item-wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		fill: #ffffff;
+		opacity: 0.3;
+		margin-left: auto;
+		transition: fill linear 250ms, opacity linear 250ms, transform linear 250ms;
+		&:hover,
+		&:focus {
+			fill: #ffb548;
+			opacity: 1;
+			transform: scale(1.5);
+		}
+	}
+	&__names {
+		font-family: "Bebas Neue";
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 2px;
+		display: block;
+		color: #ffb548;
+	}
+	&__job {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: justify;
+		opacity: 0.5;
+		display: block;
+	}
+	&__comment {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		margin-top: 26px;
+	}
+	&__comment-date {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		opacity: 0.5;
+		margin-top: 9px;
+	}
 }

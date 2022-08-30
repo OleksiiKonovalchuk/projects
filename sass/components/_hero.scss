@@ -1,3 +1,55 @@
 .hero {
 	background: url(../../images/SOS/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 313px;
+	padding-bottom: 53px;
+	text-align: center;
+	&__header {
+		font-family: "Bebas Neue";
+		font-weight: 400;
+		font-size: 80px;
+		line-height: 96px;
+		text-align: center;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+
+		color: #ffffff;
+	}
+	&__text {
+		font-family: "Bebas Neue";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 2px;
+
+		margin-bottom: 29px;
+	}
+	&__btn {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		color: #1a1917;
+		margin-bottom: 364px;
+	}
+	&__btn-span {
+		margin-left: 11px;
+		margin-right: 14px;
+		opacity: 0.5;
+		border: 0.873968px solid #1a1917;
+		transform: matrix(1, 0, 0.04, 1, 0, 0);
+	}
+	&__story {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 22px;
+		text-transform: uppercase;
+	}
+	&__arrow {
+		stroke: #ffffff;
+		stroke-width: 2px;
+		margin: 0;
+	}
 }
