@@ -1,7 +1,7 @@
 .subscribe {
-	background: url(/images/SOS/subscribe-img.jpg), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+	background-image: url(/images/SOS/subscribe-img.jpg), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 	background-size: 445px 695px, 100% 100%;
-	background-position: left 40px top 50px, top -2px left -2px;
+	background-position: left 40px top 50px, top left;
 	background-repeat: no-repeat;
 
 	&__container {
