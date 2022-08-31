@@ -78,7 +78,7 @@ button {
   margin: 0 auto;
 }
 
-.quotes__header, .demands__header, .features__header, .social-br__header {
+.subscribe__header, .quotes__header, .demands__header, .features__header, .social-br__header {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-size: 80px;
@@ -87,7 +87,7 @@ button {
   text-transform: uppercase;
 }
 
-.quotes__what, .demands__what, .features__what, .social-br__what {
+.subscribe__what, .quotes__what, .demands__what, .features__what, .social-br__what {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-size: 24px;
@@ -161,7 +161,7 @@ button {
 }
 
 .hero {
-  background: url(/images/SOS/hero-bg.jpg);
+  background-image: url(/images/SOS/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -215,7 +215,7 @@ button {
 }
 
 .social-br {
-  background: url(../../images/SOS/social-br-bg.jpg);
+  background-image: url(../../images/SOS/social-br-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -455,6 +455,24 @@ button {
 
 .subscribe {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+}
+.subscribe__container {
+  display: flex;
+}
+.subscribe__wrapper:last-child {
+  padding-top: 220px;
+  padding-bottom: 152px;
+}
+.subscribe__descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.subscribe__input {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  height: 60px;
+  width: 100%;
 }
 
 .footer {

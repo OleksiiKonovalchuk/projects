@@ -1,3 +1,27 @@
 .subscribe {
 	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+	&__container {
+		display: flex;
+	}
+	&__wrapper:last-child {
+		padding-top: 220px;
+		padding-bottom: 152px;
+	}
+	&__what {
+		@extend %text;
+	}
+	&__header {
+		@extend %header;
+	}
+	&__descr {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	&__input {
+		background: rgba(255, 255, 255, 0.08);
+		border-radius: 5px;
+		height: 60px;
+		width: 100%;
+	}
 }
