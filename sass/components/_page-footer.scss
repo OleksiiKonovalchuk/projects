@@ -1,11 +1,20 @@
 .footer {
 	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 	padding-bottom: 45px;
+	padding-top: 40px;
 	&-socials {
 		display: flex;
+		&__item:not(:last-child) {
+			margin-right: 50px;
+		}
 	}
 	&-socials__img {
 		fill: #fff;
+		transition: fill linear 250ms;
+		&:hover,
+		&:focus {
+			fill: #ff1313;
+		}
 	}
 	&__container {
 		display: flex;
@@ -33,11 +42,8 @@
 		line-height: 16px;
 		text-transform: uppercase;
 	}
-	&__item:not(:last-child)::after {
-		content: "";
-		width: 3px;
-		height: 12px;
-		background-color: #fff;
+	&__item:not(:last-child) {
+		margin-right: 8px;
 	}
 }
 .copy {

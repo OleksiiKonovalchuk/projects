@@ -43,7 +43,11 @@ button {
   font-size: 16px;
   line-height: 22px;
   text-transform: capitalize;
+  transition: background-image linear 250ms;
   color: #1a1917;
+}
+button:hover, button:focus {
+  background: linear-gradient(194.68deg, #cea971 11.27%, #d1b88a 90.4%);
 }
 
 .list {
@@ -130,6 +134,10 @@ button {
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
+  transition: color linear 250ms;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #ff1313;
 }
 
 .page-header__socials-list {
@@ -316,7 +324,7 @@ button {
 }
 
 .demands {
-  background: url(../../images/SOS/demands-bg.jpg);
+  background: url("../images/SOS/demands-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -353,7 +361,7 @@ button {
 }
 
 .quotes {
-  background: url(../../images/SOS/quotes-bg.jpg);
+  background: url("../images/SOS/quotes-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -490,12 +498,20 @@ button {
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
   padding-bottom: 45px;
+  padding-top: 40px;
 }
 .footer-socials {
   display: flex;
 }
+.footer-socials__item:not(:last-child) {
+  margin-right: 50px;
+}
 .footer-socials__img {
   fill: #fff;
+  transition: fill linear 250ms;
+}
+.footer-socials__img:hover, .footer-socials__img:focus {
+  fill: #ff1313;
 }
 .footer__container {
   display: flex;
@@ -523,11 +539,8 @@ button {
   line-height: 16px;
   text-transform: uppercase;
 }
-.policy__item:not(:last-child)::after {
-  content: "";
-  width: 3px;
-  height: 12px;
-  background-color: #fff;
+.policy__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .copy {

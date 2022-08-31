@@ -43,8 +43,12 @@ button {
 	font-size: 16px;
 	line-height: 22px;
 	text-transform: capitalize;
-
+	transition: background-image linear 250ms;
 	color: #1a1917;
+	&:hover,
+	&:focus {
+		background: linear-gradient(194.68deg, #cea971 11.27%, #d1b88a 90.4%);
+	}
 }
 
 .list {

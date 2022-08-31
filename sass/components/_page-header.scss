@@ -28,6 +28,11 @@
 	font-size: 12px;
 	line-height: 16px;
 	text-transform: uppercase;
+	transition: color linear 250ms;
+	&:hover,
+	&:focus {
+		color: #ff1313;
+	}
 }
 .page-header__socials-list {
 	display: flex;
