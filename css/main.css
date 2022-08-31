@@ -193,6 +193,7 @@ button {
   font-size: 16px;
   line-height: 22px;
   color: #1a1917;
+  margin: 0 auto;
   margin-bottom: 364px;
 }
 .hero__btn-span {
@@ -274,7 +275,7 @@ button {
 }
 
 .features {
-  background-image: url(../../images/SOS/features-bg.jpg);
+  background-image: url("../../images/SOS/features-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -454,7 +455,7 @@ button {
 }
 
 .subscribe {
-  background-image: url(/images/SOS/subscribe-img.jpg), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  background-image: url("/images/SOS/subscribe-img.jpg"), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
   background-size: 445px 695px, 100% 100%;
   background-position: left 40px top 50px, top left;
   background-repeat: no-repeat;
