@@ -30,7 +30,6 @@ address {
 
 button {
   display: block;
-  margin: 0 auto;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -161,7 +160,7 @@ button {
 }
 
 .hero {
-  background-image: url(/images/SOS/hero-bg.jpg);
+  background-image: url(./images/SOS/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -215,7 +214,7 @@ button {
 }
 
 .social-br {
-  background-image: url(../../images/SOS/social-br-bg.jpg);
+  background-image: url(./images/SOS/social-br-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -454,25 +453,36 @@ button {
 }
 
 .subscribe {
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  background: url(/images/SOS/subscribe-img.jpg), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  background-size: 445px 695px, 100% 100%;
+  background-position: left 40px top 50px, top -2px left -2px;
+  background-repeat: no-repeat;
 }
 .subscribe__container {
-  display: flex;
-}
-.subscribe__wrapper:last-child {
   padding-top: 220px;
   padding-bottom: 152px;
+  padding-left: 500px;
+}
+.subscribe__header {
+  margin-bottom: 46px;
 }
 .subscribe__descr {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  margin-bottom: 68px;
+}
+.subscribe__form {
+  display: flex;
+  margin-right: 0;
 }
 .subscribe__input {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 5px;
   height: 60px;
-  width: 100%;
+  width: 367px;
+  padding-left: 21px;
+  margin-right: 17px;
 }
 
 .footer {

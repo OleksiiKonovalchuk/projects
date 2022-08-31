@@ -1,27 +1,38 @@
 .subscribe {
-	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+	background: url(/images/SOS/subscribe-img.jpg), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+	background-size: 445px 695px, 100% 100%;
+	background-position: left 40px top 50px, top -2px left -2px;
+	background-repeat: no-repeat;
+
 	&__container {
-		display: flex;
-	}
-	&__wrapper:last-child {
 		padding-top: 220px;
 		padding-bottom: 152px;
+		padding-left: 500px;
 	}
+
 	&__what {
 		@extend %text;
 	}
 	&__header {
 		@extend %header;
+		margin-bottom: 46px;
 	}
 	&__descr {
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 22px;
+		margin-bottom: 68px;
+	}
+	&__form {
+		display: flex;
+		margin-right: 0;
 	}
 	&__input {
 		background: rgba(255, 255, 255, 0.08);
 		border-radius: 5px;
 		height: 60px;
-		width: 100%;
+		width: 367px;
+		padding-left: 21px;
+		margin-right: 17px;
 	}
 }
