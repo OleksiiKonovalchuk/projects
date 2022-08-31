@@ -1,5 +1,6 @@
 .footer {
 	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+	padding-bottom: 45px;
 	&-socials {
 		display: flex;
 	}
@@ -8,5 +9,40 @@
 	}
 	&__container {
 		display: flex;
+		flex-direction: column;
 	}
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-between;
+		&:last-child {
+			border-top: 0.873968px solid #ffffff;
+			opacity: 0.5;
+			margin-top: 30px;
+			padding-top: 22px;
+		}
+	}
+}
+.policy {
+	display: flex;
+
+	&__link {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		text-transform: uppercase;
+	}
+	&__item:not(:last-child)::after {
+		content: "";
+		width: 3px;
+		height: 12px;
+		background-color: #fff;
+	}
+}
+.copy {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	opacity: 0.5;
 }

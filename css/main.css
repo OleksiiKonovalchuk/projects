@@ -5,7 +5,7 @@ body {
   line-height: 1.22;
   color: #ffffff;
   letter-spacing: 0.1em;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 }
 
 /* ===== Normalize ====== */
@@ -161,7 +161,7 @@ button {
 }
 
 .hero {
-  background-image: url("/images/SOS/hero-bg.jpg");
+  background-image: url("../images/SOS/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -216,7 +216,7 @@ button {
 }
 
 .social-br {
-  background-image: url(/images/SOS/social-br-bg.jpg);
+  background-image: url("../images/SOS/social-br-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -275,7 +275,7 @@ button {
 }
 
 .features {
-  background-image: url("../../images/SOS/features-bg.jpg");
+  background-image: url("../images/SOS/features-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -455,7 +455,7 @@ button {
 }
 
 .subscribe {
-  background-image: url("/images/SOS/subscribe-img.jpg"), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  background-image: url("../images/SOS/subscribe-img.jpg"), linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
   background-size: 445px 695px, 100% 100%;
   background-position: left 40px top 50px, top left;
   background-repeat: no-repeat;
@@ -489,6 +489,7 @@ button {
 
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  padding-bottom: 45px;
 }
 .footer-socials {
   display: flex;
@@ -498,4 +499,40 @@ button {
 }
 .footer__container {
   display: flex;
+  flex-direction: column;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__wrapper:last-child {
+  border-top: 0.873968px solid #ffffff;
+  opacity: 0.5;
+  margin-top: 30px;
+  padding-top: 22px;
+}
+
+.policy {
+  display: flex;
+}
+.policy__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.policy__item:not(:last-child)::after {
+  content: "";
+  width: 3px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.copy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
