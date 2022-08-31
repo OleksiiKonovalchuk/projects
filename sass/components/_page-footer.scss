@@ -1,6 +1,12 @@
 .footer {
 	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
-}
-.footer-socials__img {
-	fill: #fff;
+	&-socials {
+		display: flex;
+	}
+	&-socials__img {
+		fill: #fff;
+	}
+	&__container {
+		display: flex;
+	}
 }

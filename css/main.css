@@ -160,7 +160,7 @@ button {
 }
 
 .hero {
-  background-image: url(./images/SOS/hero-bg.jpg);
+  background-image: url(/images/SOS/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -214,7 +214,7 @@ button {
 }
 
 .social-br {
-  background-image: url(./images/SOS/social-br-bg.jpg);
+  background-image: url(images/SOS/social-br-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -488,7 +488,12 @@ button {
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 }
-
+.footer-socials {
+  display: flex;
+}
 .footer-socials__img {
   fill: #fff;
+}
+.footer__container {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
