@@ -1,0 +1,128 @@
+.container {
+	padding: 0 20px;
+	max-width: 320px;
+}
+.header {
+	padding: 40px 0 92px;
+	background-image: url("/images/js/mobile.jpg");
+	background-size: cover;
+	@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		background-image: url("/images/js/mobile@2x.jpg");
+	}
+}
+
+.home {
+	display: none;
+}
+.header__nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 0 60px 0;
+}
+.header__menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: end;
+}
+
+.menu__link {
+	position: relative;
+	color: inherit;
+	text-decoration: none;
+	font-family: "Roboto";
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+
+	color: #ffffff;
+}
+.menu__item:not(:last-child) {
+	margin-right: 39px;
+}
+.form {
+	text-align: center;
+}
+.search {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	border-bottom: 0.5px solid #ffffff;
+	min-width: 100%;
+}
+.search::placeholder {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #ffffff;
+}
+
+.active::after {
+	position: absolute;
+	content: "";
+	background-color: #ff001b;
+	width: 100%;
+	height: 3px;
+	bottom: -2px;
+	left: 0;
+}
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 0 32px;
+		max-width: 768px;
+	}
+	.header {
+		padding-bottom: 81px;
+		background-image: url("/images/js/tablet.jpg");
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+			background-image: url("/images/js/tablet@2x.jpg");
+		}
+	}
+
+	.header__nav {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 41px;
+	}
+	.home {
+		display: block;
+		text-decoration: none;
+		font-family: "Roboto";
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 35px;
+
+		color: #ffffff;
+	}
+	.search {
+		min-width: 336px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1280px;
+	}
+	.header {
+		padding-bottom: 80px;
+		background-image: url("/images/js/pc.jpg");
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+			background-image: url("/images/js/pc@2x.jpg");
+		}
+	}
+	.header__nav {
+		margin-bottom: 44px;
+	}
+	.search {
+		min-width: 394px;
+	}
+}
