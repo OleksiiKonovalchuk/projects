@@ -3,7 +3,6 @@ body {
   font-weight: 400px;
   font-size: 18px;
   line-height: 1.22;
-  color: #ffffff;
   letter-spacing: 0.1em;
   background-color: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 }
@@ -77,145 +76,94 @@ button:hover, button:focus {
   overflow: hidden;
 }
 
-.container {
-  padding: 0 20px;
-  max-width: 320px;
+.plants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
-
-.header {
-  padding: 40px 0 92px;
-  background-image: url("/images/js/mobile.jpg");
-  background-size: cover;
+.plants_label {
+  width: 200px;
+  display: block;
+  padding: 10px;
+  color: black;
+  border: 3px solid #bbbb0b;
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .header {
-    background-image: url("/images/js/mobile@2x.jpg");
-  }
+.plants_input:checked + .plants_label {
+  border-color: #0bbb3a;
 }
-
-.home {
+.plants_name {
+  color: green;
+  font-size: 15px;
+}
+.plants_price {
+  color: rgb(255, 0, 238);
+  background-color: green;
+  border-radius: 10px;
+  padding: 5px;
+}
+.plants_input {
   display: none;
 }
 
-.header__nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0 0 60px 0;
-}
-
-.header__menu {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: end;
-}
-
-.menu__link {
+.wrapper {
   position: relative;
-  color: inherit;
-  text-decoration: none;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.menu__item:not(:last-child) {
-  margin-right: 39px;
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
 }
 
-.form {
-  text-align: center;
+.withListener {
+  color: blue;
 }
 
-.search {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  border-bottom: 0.5px solid #ffffff;
-  min-width: 100%;
+.listInput {
+  width: 100px;
 }
 
-.search::placeholder {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-}
-
-.active::after {
+.modal__backdrop {
+  background-color: rgba(128, 0, 128, 0.749);
   position: absolute;
-  content: "";
-  background-color: #ff001b;
-  width: 100%;
-  height: 3px;
-  bottom: -2px;
+  top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal__header {
+  color: rgb(111, 255, 0);
+  margin-bottom: 20px;
+}
+.modal__summary {
+  color: rgb(111, 255, 0);
+  margin-bottom: 20px;
+}
+.modal__span {
+  color: rgb(255, 153, 0);
+}
+.modal__close {
+  background-color: green;
+  padding: 20px;
+  width: auto;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-    max-width: 768px;
-  }
-  .header {
-    padding-bottom: 81px;
-    background-image: url("/images/js/tablet.jpg");
-  }
+.hidden {
+  display: none;
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .header {
-    background-image: url("/images/js/tablet@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 41px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .home {
-    display: block;
-    text-decoration: none;
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 35px;
-    color: #ffffff;
-  }
-}
-@media screen and (min-width: 768px) {
-  .search {
-    min-width: 336px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1280px;
-  }
-  .header {
-    padding-bottom: 80px;
-    background-image: url("/images/js/pc.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .header {
-    background-image: url("/images/js/pc@2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__nav {
-    margin-bottom: 44px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .search {
-    min-width: 394px;
-  }
+
+.redWord {
+  color: red;
 }/*# sourceMappingURL=main.css.map */
