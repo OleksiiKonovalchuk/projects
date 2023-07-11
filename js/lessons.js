@@ -117,27 +117,106 @@
 // 	return x.replace(/[0-4]/g, "0").replace(/[5-9]/g, "1");
 // }
 // console.log(fakeBin("45385593107843568")); //, "01011110001100111"));
-function addBinary(a, b) {
-	let number = a + b;
-	let binary = "";
-	// const binary = [];
-	while (number !== 0) {
-		if (number % 2) {
-			// binary.push(1);
-			binary = 1 + binary;
-			number = Math.floor(number / 2);
-		} else {
-			// binary.push(0);
-			binary = 0 + binary;
-			number = number / 2;
-		}
-	}
-	return binary;
-}
 // function addBinary(a, b) {
-// 	return (a + b).toString(16);
+// 	let number = a + b;
+// 	let binary = "";
+// 	// const binary = [];
+// 	while (number !== 0) {
+// 		if (number % 2) {
+// 			// binary.push(1);
+// 			binary = 1 + binary;
+// 			number = Math.floor(number / 2);
+// 		} else {
+// 			// binary.push(0);
+// 			binary = 0 + binary;
+// 			number = number / 2;
+// 		}
+// 	}
+// 	return binary;
 // }
-console.log(addBinary(1, 2)); // 11
-console.log(addBinary(100, 0)); // 1100100
-console.log(addBinary(281328809153791, 241990690575849)); //111011
-console.log(addBinary(51, 12)); // 111111
+// // function addBinary(a, b) {
+// // 	return (a + b).toString(16);
+// // }
+// console.log(addBinary(1, 2)); // 11
+// console.log(addBinary(100, 0)); // 1100100
+// console.log(addBinary(281328809153791, 241990690575849)); //111011
+// console.log(addBinary(51, 12)); // 111111
+// function code(strng) {
+// 	return strng
+// 		.split("")
+// 		.map(item => {
+// 			const binary = Number(item).toString(2);
+// 			const toConcat =
+// 				binary.length === 1
+// 					? "1"
+// 					: binary.length === 2
+// 					? "01"
+// 					: binary.length === 3
+// 					? "001"
+// 					: binary.length === 4
+// 					? "0001"
+// 					: binary.length === 5
+// 					? "00001"
+// 					: "000001";
+// 			return toConcat.concat(binary);
+// 		})
+// 		.join("");
+// }
+// function decode(str) {
+// 	let decoded = "";
+// 	let whatLeft = String(str);
+// 	while (whatLeft.length) {
+// 		if (whatLeft.startsWith("10")) {
+// 			decoded += "0";
+// 			whatLeft = whatLeft.slice(2);
+// 		} else if (whatLeft.startsWith("11")) {
+// 			decoded += "1";
+// 			whatLeft = whatLeft.slice(2);
+// 		} else if (whatLeft.startsWith("01")) {
+// 			decoded += parseInt(whatLeft.slice(2, 4), 2);
+// 			whatLeft = whatLeft.slice(4);
+// 		} else if (whatLeft.startsWith("001")) {
+// 			decoded += parseInt(whatLeft.slice(3, 6), 2);
+// 			whatLeft = whatLeft.slice(6);
+// 		} else if (whatLeft.startsWith("0001")) {
+// 			decoded += parseInt(whatLeft.slice(4, 8), 2);
+// 			whatLeft = whatLeft.slice(8);
+// 		} else if (whatLeft.startsWith("00001")) {
+// 			decoded += parseInt(whatLeft.slice(5, 10), 2);
+// 			whatLeft = whatLeft.slice(10);
+// 		}
+// 	}
+// 	return decoded;
+// }
+// console.log(code("9"));
+// console.log(code("62")); //, "0011100110")
+// console.log(code("55337700")); //, "001101001101011101110011110011111010")
+// console.log(code("1119441933000055")); //, "1111110001100100110000110011000110010111011110101010001101001101")
+// console.log(code("69")); //, "00111000011001")
+// console.log(code("86")); //, "00011000001110")
+// console.log(code("77338855")); //) --> "001111001111011101110001100000011000001101001101"
+// console.log(code("77338")); //-->// "0011110011110111011100011000"
+// console.log(code("0011121314")); //-->// "1010111111011011011111001100"
+// console.log(code("1119441933000055"));
+// console.log(decode("1111110001100100110000110011000110010111011110101010001101001101"));
+// console.log("HALF");
+// console.log(decode("10001111")); //, "07")
+// console.log(
+// 	decode("001100001100001100001110001110001110011101110111001110001110001110001111001111001111001100001100001100"),
+// ); //, "444666333666777444")
+// console.log(decode("01110111110001100100011000000110000011110011110111011100110000110001100110")); //, "33198877334422")
+// console.log(
+// 	decode(
+// 		"0011010011010011011010101111110011000011000011000011100011100011100011100011100011100001100100011001000110011100011001001111001111001111001111001111001111",
+// 	),
+// ); //, "55500011144466666699919777777")
+// console.log(
+// 	decode(
+// 		"01110111011111000110010011110011110011110011110011110011110111011101110110011001100110011001101111111010101100011001000110000001100000011000",
+// 	),
+// ); //, "3331977777733322222211100019888")
+
+// console.log(decode("001111001111011101110001100000011000001101001101")); //-> "77338855"
+// console.log(decode("0011110011110111011100011000")); //-> "77338"
+// console.log(decode("1010111111011011011111001100")); //) -> "0011121314"
+// console.log(decode("11111100110010011000011001100110010111011110101010001101001101"));
